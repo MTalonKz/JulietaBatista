@@ -1,39 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');    
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-* {box-sizing: border-box;}
-.row::after {content: ""; clear: both; display: table;}
-[class*="col-"] {float: left;}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
 
-body, html {
-    height: 100%;
-    margin: 0;
-    font: 400 18px/1.5 "Lato", sans-serif;
-    color: #bfbfbf;
-  }
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 18px/1.5 "Lato", sans-serif;
+  color: #bfbfbf;
+  scroll-behavior: smooth;
+}
 
 h3 {
   letter-spacing: 4px;
-  text-align:left;
+  text-align: left;
   left: 0;
   top: 50%;
   width: 100%;
   color: #cd0a18;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 30px;
-  background-color:transparent;
+  background-color: transparent;
 }
 
 /* estilo de los logos */
@@ -45,29 +79,23 @@ img {
 
 /* ---- */
 
-
-
 .notcentered {
-  text-align:left;
-
+  text-align: left;
 }
 a {
   color: #cd0a18;
-
 }
 
 a:hover {
   color: dimgrey;
 }
 
-
 /* //////////////////// ESTILOS DIV //////////////////// */
-
 
 .general {
   color: #a5a5a5;
   background-color: black;
-  padding:50px 70px;
+  padding: 50px 70px;
   text-align: left;
 }
 
@@ -76,158 +104,164 @@ a:hover {
   column-gap: 30px;
 }
 
-.formcolumns{
-    padding:50px 80px;
-    }
+.formcolumns {
+  padding: 50px 80px;
+}
 
-    
 /* Turn off parallax scrolling for tablets and phones */
-    /*@media only screen and (min-device-width: 768px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-      background-attachment: scroll;
-    
-    }
-  [class*="col-"] {
-      width: 100%; }
-  }
 
-  
 @media only screen and (max-width: 768px) {
-.title {
-  font-size: 45px;
+  [class*="col-12"] {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-}
+  [class*="col-6"] {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-.bgimg-1 {
-    height: 50%;
+  .title {
+    font-size: 45px;
+  }
+
+  .topnav a {
+    display: none;
+  }
+
+  .textcolumn {
+    columns: 1;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: fixed;
+  }
+  .topnav.responsive a.icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 /* //////////////////// MENU TERMINADO //////////////////// */
 
-
 .topnav {
-    overflow: hidden;
-    background-color: rgba(00, 00, 00, 0.1);
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-   }
-  
-  .topnav a:hover {
-    background-color: #cd0a18;
-    color: #ccc;
-  }
-    
-  .topnav-right {
-    float: right;
-  }
-  
-  
-  /* //////////////////// CONTACTO Y FORMULARIO  //////////////////// */
-  
-  #contacto {
-    width: 100%; 
-    height: 100%; 
-    background-color: black;
-    }
-  
-  
-  label {
-    color: #ccc;
-  }
-  
-  input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    outline: none;
-  }
-  
-  input[type=text]:hover {
-    border-color: #cd0a18;
-  }
-  
-  textarea {
-    width: 100%;
-    height: 100px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    resize: none;
-    outline: none;
-  }
-  
-  textarea:hover {
-    border-color: #cd0a18;
-  }
-  
-  input[type=button], input[type=submit], input[type=reset] {
-    background-color: #ccc;
-    border: 2px;
-    border-radius: 2px;
-    border-color: #ccc;
-    color: #cd0a18;
-    font-weight:bold;
-    font-size: 11pt;
-    padding: 8px 16px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #cd0a18;
-    color: #ccc;
-  }
+  overflow: hidden;
+  background-color: rgba(00, 00, 00, 0.1);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
 
-  
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #cd0a18;
+  color: #ccc;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* //////////////////// CONTACTO Y FORMULARIO  //////////////////// */
+
+#contacto {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+label {
+  color: #ccc;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+input[type="text"]:hover {
+  border-color: #cd0a18;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  resize: none;
+  outline: none;
+}
+
+textarea:hover {
+  border-color: #cd0a18;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: #ccc;
+  border: 2px;
+  border-radius: 2px;
+  border-color: #ccc;
+  color: #cd0a18;
+  font-weight: bold;
+  font-size: 11pt;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #cd0a18;
+  color: #ccc;
+}
+
 /* //////////////////// ESTILOS IMG  //////////////////// */
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7 {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -242,31 +276,26 @@ a:hover {
   min-height: 100%;
 }
 
-
 /* laberinto */
 
 .bgimg-2 {
-background-image: url("img/laberinto.png");
-min-height: 100%; 
+  background-image: url("img/laberinto.png");
+  min-height: 100%;
 }
-
 
 /* vacunas femicidios */
 
 .bgimg-3 {
-
-background-image: url("img/femicidios.png");
-height: 500px;
+  background-image: url("img/femicidios.png");
+  height: 500px;
 }
-  
+
 .bgimg-4 {
-
-background-image: url("img/mupi.png");
-height: 500px;
-background-position: top;
-
+  background-image: url("img/mupi.png");
+  height: 500px;
+  background-position: top;
 }
- 
+
 /* telefono */
 
 .bgimg-5 {
@@ -283,51 +312,48 @@ background-position: top;
 /* candado */
 
 .bgimg-7 {
-background-image: url("img/candado.png");
-min-height: 700px;
-width: auto;
-
+  background-image: url("img/candado.png");
+  min-height: 700px;
+  width: auto;
 }
 
 /* //////////////////// ESTILOS ID  //////////////////// */
-
 
 /* inicio */
 
 #inicio {
   width: 100%;
   height: auto;
-  background-color: black;    }
-    
-/* podcast */
-  
-#podcast {
-    height: auto;
-    width: 100%;
-    background-color: black;
+  background-color: black;
+}
 
-  }
-  
+/* podcast */
+
+#podcast {
+  height: auto;
+  width: 100%;
+  background-color: black;
+}
+
 /* objetivos */
 
 #objetivos {
   height: auto;
   width: 100%;
   background-color: black;
-  }
+}
 
-  /* nosotras */
-  
+/* nosotras */
+
 #involucrate {
   height: auto;
-  height: 100%; 
-    background-color: black;}
+  height: 100%;
+  background-color: black;
+}
 
 /* contactos */
 
 #contacto {
   height: 100%;
   background-color: black;
-
-  }
-    
+}

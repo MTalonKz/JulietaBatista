@@ -13,7 +13,7 @@
 <!----------------------- MENU ----------------------->
 
     <div id="menu" class="row">
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
           <div class="topnav-right">        
             <a href="#inicio">Intro</a>
             <a href="#objetivos">Objetivos</a>
@@ -21,9 +21,22 @@
             <a href="#podcast">Apoyo a víctimas</a>
             <a href="#involucrate">Involucrate</a>
             <a href="#contacto">Contacto</a>    
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"
+            ><i class="fa fa-bars"></i
+          ></a>
           </div>
         </div> 
       </div> 
+    <script>
+        function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                x.className += " responsive";
+                } else {
+                x.className = "topnav";
+                }
+            }
+    </script>
     
 <!----------------------- CONTENIDO ----------------------->
 
@@ -52,9 +65,7 @@
                 <a href="https://drive.google.com/file/d/13DtVP-_MVr2eEr8cY1x9NAm8_7VU4HkI/view?usp=sharing" target="blank"> Clickeá acá para saber más</a>
             </p>
             </div>
-        </div>
-      
-        
+        </div>    
     </div>
 
 <!-- img   -->
